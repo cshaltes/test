@@ -1,4 +1,10 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import './App.css';
+import {useState} from 'react'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Fake from './components/Fake'
 import {
     Collapse,
     Navbar,
@@ -14,27 +20,18 @@ import {
     Button
 } from 'reactstrap';
 
-class App extends Component {
-    constructor(props) {
-        super(props);
+const App = () => {
+    return (
+        <Router>
+    <div className='container'>
+        <Header />
 
-        this.toggle = this.toggle.bind(this);
-        this.state = {
-            isOpen: false
-        };
-    }
-    toggle() {
-        this.setState({
-            isOpen: !this.state.isOpen
-        });
-    }
-    render() {
-        return (
-            <div>
-                <Button color="danger">Danger!</Button>
-            </div>
-        );
-    }
+
+        <Route path='/Fake' component={Fake} />
+       <Footer />
+    </div>
+    </Router>
+    )
 }
 
 export default App;

@@ -1,3 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); /*font-family: 'Montserrat', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); /*font-family: 'Lato', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap'); /*font-family: 'Open Sans', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); /*font-family: 'Poppins', sans-serif;*/
+
+.header {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 46px;
+}
+
+.subheader {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+}
+
+.body {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+.nav-styling {
+    font-family: 'Poppins', sans-serif;
+    color: #282c34 !important;
+}
+
+a.dropdown-toggle.nav-link {
+    font-family: 'Poppins', sans-serif;
+    color: #282c34 !important;
+}
+
 .App {
   text-align: center;
 }
@@ -28,11 +61,43 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dropdown-menu.show { /* By default there is space between .dropdown-toggle and .dropdown-menu */
+  margin: 0px;
 }
+
+.navbar-brand { /* By default .navbar-brand has 1rem */
+  margin-right: 1rem !important;
+}
+
+hr { /* Have to make own hr in Reactstrap */
+    border: 0;
+    clear:both;
+    display:block;
+    width: 75%;
+    background-color:#FFFFFF;
+    height: 1px;
+}
+
+.background-blue { /* Used by Footer */
+    background-color: #add8e6;
+}
+
+.insta-grad svg *{
+    fill: url(#rg);
+}
+
+.jumbotron {
+    background-image: url("https://thumbs.dreamstime.com/z/driving-empty-road-dawn-to-sun-33737304.jpg");
+    background-repeat: no-repeat;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
